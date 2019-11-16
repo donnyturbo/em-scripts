@@ -15,6 +15,10 @@ Output of scripts will be placed in /srv/tomcat/data/repos/output this is captur
 6. Cut and paste “chmod 755 *” 
 7. Cut and paste “./prep-system.sh (this will install python3.6, create output directory and set cron job to run ‘weekly.sh’ every Thu at 2:00 AM. 
 
+Requirement: 
+To use prep-system.sh and install python internet access is required.  Offline python install instructions here.  https://vmturbo.atlassian.net/wiki/spaces/~austin.portal/pages/174073109/Installing+the+Pro-Services+Integration+Environment 
+
+
 ## Required File Updates  
 
 ### guestos.py
@@ -22,20 +26,16 @@ Edit file /srv/tomcat/script/control/em-scripts/gen_scripts_data/guestos/guestos
 
 update with current user/password: 
 
-TURBO_USER = '<user>' 
-TURBO_PASS = '<password>' 
+TURBO_USER = 'administrator'
+TURBO_PASS = 'administrator' 
 
- 
 ### triad_with_current_actions.py 
 Edit file /srv/tomcat/script/control/em-scripts/gen_scripts_data/triad/triad_with_current_actions.py 
 
 update with current user/password:
 
-TURBO_USER = 'administrator' 
+TURBO_USER = 'administrator'
 TURBO_PASS = 'administrator' 
 
- 
 
- 
-
-To use prep-system.sh and install python internet access is required.  Offline python install instructions here.  https://vmturbo.atlassian.net/wiki/spaces/~austin.portal/pages/174073109/Installing+the+Pro-Services+Integration+Environment 
+END
